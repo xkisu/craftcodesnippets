@@ -1,0 +1,11 @@
+{% import '_includes/forms' as forms %}
+
+<div id="{{ id }}">
+
+    {{ forms.selectField({
+        id: id~'-language'
+    }) }}
+
+    <!-- <select id="{{ id }}-language"></select> -->
+    <textarea name="{{ name }}" style="display: none;">{{ value }}</textarea>
+</div>
