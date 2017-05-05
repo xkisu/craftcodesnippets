@@ -11,5 +11,15 @@ Next go to the plugins page in the admin control panel and enable the plugin.
 
 To add the code snippets button in the Rich Text fields, edit `craft/configs/redactor/Standard.json` and add `codesnippets` to the `plugins` array. Done!
 
+# Using the Code Snippet field type in templates
+
+```HTML
+
+<pre class="code">{{ entry.code }}</pre>
+
+```
+
+Replace `entry."code"` with the id for your code snippet field. 
+
 # Notes
 Please report and bugs and suggestions in the issues section on Github :)

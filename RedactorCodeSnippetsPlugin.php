@@ -30,10 +30,9 @@ class RedactorCodeSnippetsPlugin extends BasePlugin
 
         if ( craft()->request->isCpRequest() && craft()->userSession->isLoggedIn() ) {
             craft()->templates->includeJsResource('redactorcodesnippets/code-snippets-plugin-redactor.js', false);
-        }else {
+        }else if (!craft()->request->isCpRequest() || craft()->request->isLivePreview()){
             craft()->templates->includeJsResource('redactorcodesnippets/code-snippets-formatting.js', false);
             craft()->templates->includeJsResource('lib/jquery-2.2.4.min.js?d=1487195936', true);
-
         }
     }
 }
