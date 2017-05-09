@@ -19,7 +19,11 @@ To add the code snippets button in the Rich Text fields, edit `craft/configs/red
 
 ```
 
-Replace `entry."code"` with the id for your code snippet field. 
+Replace `entry."code"` with the id for your code snippet field. The pre tag will automatically be detected and code formatting will be applied.
 
 # Notes
 Please report and bugs and suggestions in the issues section on Github :)
+
+
+# TODO
+ * Add Ace configuration for theme, font size, etc. 
