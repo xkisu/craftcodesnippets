@@ -1,5 +1,9 @@
 This plugin adds the option to insert code snippets in the rich text editor, as well as adding a custom code snippet fieldtype that can be used with custom templates to create things like Github Gist styled posts.
 
+# Notice
+
+If you JUST want the code fieldtype, I have a second plugin [Clean Code](https://github.com/xkisu/CraftCleanCode) which implements a standalone code fieldtype a lot cleaner and with better usage. This works better for single code fields and code blocks in a Matrix.
+
 # Installation
 Create a folder called `redactorcodesnippets` in the `craft/plugins` directory. Enter the directory and either:
  * Run 'git init; git git remote add origin https://github.com/MusicalCreeper01/Craft-Code-Snippets.git; git pull origin master'
